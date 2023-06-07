@@ -1,4 +1,4 @@
-# BRANCH LSTM DAN PEMANFAATAN OPTIMIZER
+# Stance Classification dengan Branch LSTM dan Pemanfaatan Optimizer
 
 # Daftar Isi
 - [Arsitektur Branch LSTM](#arsitektur-branch-lstm)
