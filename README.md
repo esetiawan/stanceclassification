@@ -4,7 +4,7 @@
 - [Arsitektur Branch LSTM](#arsitektur-branch-lstm)
 - [LSTM Layer](#lstm-layer)
 - [Tracing Branch LSTM](#tracing-branch-lstm)
-- [Dense Layer and Softmax](#dense-layer-and-softmax)
+- [Dense Layer and Softmax Layer](#dense-layer-and-softmax-layer)
 - [Pemanfaatan Loss Function dan Optimizer](#pemanfaatan-loss-function-dan-optimizer)
 
 
@@ -90,7 +90,11 @@ Setelah didapatkan nilai-nilai jumlah perubahan bobot, langkah selanjutnya adala
 
 Dengan didefinisikannya variabel-variabel tersebut, proses pembaruan bobot dapat dilakukan. Berikut ditampilkan hasil perhitungan pembaruan bobot beserta velocity untuk tiap bobotnya:
 
-![Hasil Velocity](images/hasil_velocity_tiap_bobot_1.png)![Hasil Velocity](images/hasil_velocity_tiap_bobot_2.png) ![Hasil Velocity](images/hasil_velocity_tiap_bobot_3.png)
+![Hasil Velocity](images/hasil_velocity_tiap_bobot_1.png)
+
+![Hasil Velocity](images/hasil_velocity_tiap_bobot_2.png) 
+
+![Hasil Velocity](images/hasil_velocity_tiap_bobot_3.png)
 
 Setelah semua bobot di-update, bobot memiliki pengaruh yang lebih baik terhadap input sehingga input selanjutnya akan memiliki nilai yang lebih dekat dengan targetnya. Setelah proses di atas, perhitungan akan diulang lagi dari dari proses forward pass, backward pass, hingga pembaruan bobot lagi, hingga akhirnya nilai loss mengalami _convergence_.
 
